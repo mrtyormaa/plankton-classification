@@ -1,0 +1,13 @@
+﻿id,date,title,content,status,elabid,url
+3,20151018,"Add a new feature - Failure","Goal : To add a (random) feature to the application.
+ 
+Procedure : 
+1. Created a new vector of features.
+2. Added the feature eccentricity to it.
+3. Added to the Random Forest.
+4. Tested results
+Results :
+1. The application executed successfully.
+2. This experiment was a failure as the runtime of the application increased significantly.
+3. Came to the conclusion that this is not the right approach. Instead of creating a new vector, it is better to append to the existing feature vector.
+ ","Need to be redone",20151024-0547dc7b0f36654d02bca826de7c83644f846aac,https://localhost:443/elabftw/experiments.php?mode=view&id=3

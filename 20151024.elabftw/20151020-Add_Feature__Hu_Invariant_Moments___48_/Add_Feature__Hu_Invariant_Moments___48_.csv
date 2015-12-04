@@ -1,0 +1,9 @@
+﻿id,date,title,content,status,elabid,url
+9,20151020,"Add Feature: Hu Invariant Moments - 48%","Goal : Add Feature: Hu Invariant Moments - 48%
+ 
+Procedure :
+ The non-orthogonal centralised moments are translation invariant and can be normalised with respect to changes in scale. However, to enable invariance to rotation they require reformulation. Hu described two different methods for producing rotation invariant moments. The first used a method called principal axes, however it was noted that this method can break down when images do not have unique principal axes. Such images are described as being rotationally symmetric. The second method Hu described is the method of absolute moment invariants and is discussed here. Hu derived these expressions from algebraic invariants applied to the moment generating function under a rotation transformation. They consist of groups of nonlinear centralised moment expressions. The result is a set of absolute orthogonal (i.e. rotation) moment invariants, which can be used for scale, position, and rotation invariant pattern identification. These were used in a simple pattern recognition experiment to successfully identify various typed characters.
+We can use this to see if the performance of our application improves. 
+This is a trial and error experiment. I say this to be trial and error because we already have implemented a lot of features which can be derived from the geomatrical properties of the images. This feature too heavily relies on the geomatrical properties. Hence the results might not improve a lot.
+Results :
+ I saw an increase of performance by 2%. This is a good trade of for 7 features. Hence, I am keeping Hu moments for th final analysis.",Success,20151024-b04817295a9ffcc6c24c9b8c2a082313748d518e,https://localhost:443/elabftw/experiments.php?mode=view&id=9

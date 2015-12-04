@@ -1,0 +1,26 @@
+﻿id,date,title,content,status,elabid,url
+7,20151020,"Add Features: All Measure Properties - 46%","Goal : Add Features: All Measure Properties
+ 
+Procedure :
+ When we divide the image based on the region while pre-processing the image, we can get a lot of good features from it. The features are as follows:
+i. ratio
+ii. minor_axis_length
+iii. major_axis_length
+iv. area
+v. convex area
+vi. eccentricity
+vii. equivalent_diameter
+viii. euler number
+ix. extent
+x. filled area
+xi. orientation
+xii. perimeter
+xiii. solidity 
+xiv. centriod
+As we can see from the features, these are all geomatrical properties of the image. We have had a lot of success from classifying the images just from the width to height ratio before. These all additions should improve the performance by a lot. This makes a lot of sense as the images vary a lto and can be easily distinguished by their geomatrical shapes. A few of the classes have very similar shapes and can't be distinguished. We can identify these classes later and try to address them by some other method.
+ 
+Steps:
+1. Calculated all the features by using the Measure Module from the scikit-image library.
+2. Added the features to the feature matrix.
+Results :
+The efficiency increased from 43% to 46% ",Success,20151024-25f7b8b80403882e50086a792a982159d89eea0b,https://localhost:443/elabftw/experiments.php?mode=view&id=7

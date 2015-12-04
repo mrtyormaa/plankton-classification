@@ -1,0 +1,10 @@
+﻿id,date,title,content,status,elabid,url
+4,20151018,"Add a new feature - Success","Goal : To add a (random) new feature to the application
+ 
+Procedure :
+1. Used 'scikit-image' library to extract  a new feature from the image.
+2. Added the new feature to the existing feature matrix.
+3. Passed the feature list.
+Results :
+1. Successfully added a new project.
+2. The runtime of the application was reasonable with ~3mins.  ","Need to be redone",20151024-eb1075bca3da5561d7b0c51734de5cae34a799ec,https://localhost:443/elabftw/experiments.php?mode=view&id=4

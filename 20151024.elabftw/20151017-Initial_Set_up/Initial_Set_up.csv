@@ -1,0 +1,16 @@
+﻿id,date,title,content,status,elabid,url
+1,20151017,"Initial Set-up","Goal : To set up a working system to experiment with. - Python
+ 
+Procedure : Follow the steps in Kaggle Plankton Tutorial.
+ 
+Results :
+1. Successfully set-up the initial system.
+2. Got the understanding of the whole system, how it works and what changes needs to be done.
+3. Identified the key libraires to use.
+i. numpy
+ii. mahotas
+iii. OpenCV
+iv. scikit-image
+3. The efficiency of the system is measures by a efficient library called 'KFLogs'
+ 
+ ",Success,20151024-90d142715d729d0b77ab516017c90a2ad63604ca,https://localhost:443/elabftw/experiments.php?mode=view&id=1

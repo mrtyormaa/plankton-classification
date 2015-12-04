@@ -1,0 +1,12 @@
+﻿id,date,title,content,status,elabid,url
+6,20151019,"Add Feature : Width to Height Ratio","Goal : Add the feature : Width to height ratio
+ 
+Procedure :
+After vewing the mages, I came to the conclusion that, a lot of the images can be can be easily classified to their correct classification based on their wdth to height ratio. A lot of images have specific shapes and they are in constant proportion in all images.
+1. Pre-process the image.
+2. Get the width to height ratio using the Measure Module from the 'scikit-image' library.
+3. Add to the feature matrix.
+Results :
+I got 43% accuracy by doing so.
+This was the first working model of the application with a proper feature and significant results.
+Although, this is a success, I am marking this experiment as to be redone. The measure module provides a lot of features which can be readily used for this project. The experiment has to continue to include some or all of the other properties and see the trade-off between performance vs speed.","Need to be redone",20151024-162418ced3abda5f57a07066a1be643ed95b17b9,https://localhost:443/elabftw/experiments.php?mode=view&id=6

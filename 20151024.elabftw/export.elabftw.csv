@@ -1,0 +1,163 @@
+﻿id,date,title,content,status,elabid,url
+13,20151024,"Add Feature: Harallic Textures ~ 0.2% increase in efficiency","Goal : Add feature : Harallic textures ~0.2% increase in efficiency.
+ 
+Procedure :
+An image texture is a set of metrics calculated in image processing designed to quantify the perceived texture of an image. Image texture gives us information about the spatial arrangement of color or intensities in an image or selected region of an image.
+Image textures can be artificially created or found in natural scenes captured in an image. Image textures are one way that can be used to help in segmentation or classification of images. To analyze an image texture in computer graphics, there are two ways to approach the issue: Structured Approach and Statistical Approach.
+Results :
+The tradeoff was not worth it. I had to add 52 columns to the feature matrix. But this resulted only in a slight increase of efficiency by 0.2%. Hence, this feature will be excluded fromt the final application.",Fail,20151024-def912c646fcb4d51b8e923c845ab8ec30af6043,https://localhost:443/elabftw/experiments.php?mode=view&id=13
+12,20151022,"Find a new feature by trial and error","Goal : To find a new feature which is suitable for the application by trial and error.
+ 
+Procedure :
+We have a lot of information being extracted from the libraries 'scikit-images and mahotas'
+At this point, I have observed that it is very difficult to get an increase in the efficiency. Getting 40% efficiency is very easy. It can be easily done by the rescaled pixels and the geomatric properties of the images.
+But moving forward, getting each level of efficiency is getting harder. I don't have expertise in image recognition. Hence, one of the strategies at this point is Brute force Trial and Error.
+This strategy can be applied as I have already reduced the test data set to 4000 instead of initial 30,000 images. 
+Results :
+ This trial and error method took 5 hours in all. But I was able to identify three more crucial features
+1. Zernike Moments
+2. Harallic Features
+3. Parameter Free Threshold Adjacency Statistics","Need to be redone",20151024-fb84b1ce3d5b04439972b8246fb03dee6cb84dfc,https://localhost:443/elabftw/experiments.php?mode=view&id=12
+11,20151021,"Add feature: Linear Binary Pattern : 49%","Goal :
+ 
+Procedure :
+ Local binary patterns (LBP) is a type of feature used for classification in computer vision. LBP is the particular case of the Texture Spectrum model. 
+The LBP feature vector, in its simplest form, is created in the following manner:
+
+Divide the examined window into cells (e.g. 16x16 pixels for each cell).
+For each pixel in a cell, compare the pixel to each of its 8 neighbors (on its left-top, left-middle, left-bottom, right-top, etc.). Follow the pixels along a circle, i.e. clockwise or counter-clockwise.
+Where the center pixel's value is greater than the neighbor's value, write ""1"". Otherwise, write ""0"". This gives an 8-digit binary number (which is usually converted to decimal for convenience).
+Compute the histogram, over the cell, of the frequency of each ""number"" occurring (i.e., each combination of which pixels are smaller and which are greater than the center).
+Optionally normalize the histogram.
+Concatenate (normalized) histograms of all cells. This gives the feature vector for the window
+
+Hence, this might be a very successful feature for further classification.
+Results :
+ This was a huge success. I got an improvement of 1% by addition of one metric. The final efficiency of the system at present lies at 49%.",Success,20151024-c5307ef94f9d3afff3dc8a7259beab4cd1de5211,https://localhost:443/elabftw/experiments.php?mode=view&id=11
+7,20151020,"Add Features: All Measure Properties - 46%","Goal : Add Features: All Measure Properties
+ 
+Procedure :
+ When we divide the image based on the region while pre-processing the image, we can get a lot of good features from it. The features are as follows:
+i. ratio
+ii. minor_axis_length
+iii. major_axis_length
+iv. area
+v. convex area
+vi. eccentricity
+vii. equivalent_diameter
+viii. euler number
+ix. extent
+x. filled area
+xi. orientation
+xii. perimeter
+xiii. solidity 
+xiv. centriod
+As we can see from the features, these are all geomatrical properties of the image. We have had a lot of success from classifying the images just from the width to height ratio before. These all additions should improve the performance by a lot. This makes a lot of sense as the images vary a lto and can be easily distinguished by their geomatrical shapes. A few of the classes have very similar shapes and can't be distinguished. We can identify these classes later and try to address them by some other method.
+ 
+Steps:
+1. Calculated all the features by using the Measure Module from the scikit-image library.
+2. Added the features to the feature matrix.
+Results :
+The efficiency increased from 43% to 46% ",Success,20151024-25f7b8b80403882e50086a792a982159d89eea0b,https://localhost:443/elabftw/experiments.php?mode=view&id=7
+9,20151020,"Add Feature: Hu Invariant Moments - 48%","Goal : Add Feature: Hu Invariant Moments - 48%
+ 
+Procedure :
+ The non-orthogonal centralised moments are translation invariant and can be normalised with respect to changes in scale. However, to enable invariance to rotation they require reformulation. Hu described two different methods for producing rotation invariant moments. The first used a method called principal axes, however it was noted that this method can break down when images do not have unique principal axes. Such images are described as being rotationally symmetric. The second method Hu described is the method of absolute moment invariants and is discussed here. Hu derived these expressions from algebraic invariants applied to the moment generating function under a rotation transformation. They consist of groups of nonlinear centralised moment expressions. The result is a set of absolute orthogonal (i.e. rotation) moment invariants, which can be used for scale, position, and rotation invariant pattern identification. These were used in a simple pattern recognition experiment to successfully identify various typed characters.
+We can use this to see if the performance of our application improves. 
+This is a trial and error experiment. I say this to be trial and error because we already have implemented a lot of features which can be derived from the geomatrical properties of the images. This feature too heavily relies on the geomatrical properties. Hence the results might not improve a lot.
+Results :
+ I saw an increase of performance by 2%. This is a good trade of for 7 features. Hence, I am keeping Hu moments for th final analysis.",Success,20151024-b04817295a9ffcc6c24c9b8c2a082313748d518e,https://localhost:443/elabftw/experiments.php?mode=view&id=9
+10,20151020,"Increase the Number of training data : Artificial Increase of data by various strategies","Goal :To increase the number of images in trianing data.
+ 
+Procedure :
+ Planktons are sea creatures without a fixed orientation. What I mean to say is, we can identify the images of humans or dogs etc.. by their orientation. They can be straight or upside down or roatated at some angle. But planktons are not identified by that.
+So, a easy strategy to artificially boost the trainign data is to rotate the images by a random value. This will double our set of training data. This also might lead to significant increase in performance.
+Results :
+ This experiment was a failure. I could not see a significant increase in the performance. The performance increased from 48% to 48.2%. But the time taken to train the system increased significantly almost double the inital time.
+Hence, the changes will be rejected. This strategy is dropped.",Fail,20151024-0b1f46d56943d4315c622e421c7f96b19677b518,https://localhost:443/elabftw/experiments.php?mode=view&id=10
+6,20151019,"Add Feature : Width to Height Ratio","Goal : Add the feature : Width to height ratio
+ 
+Procedure :
+After vewing the mages, I came to the conclusion that, a lot of the images can be can be easily classified to their correct classification based on their wdth to height ratio. A lot of images have specific shapes and they are in constant proportion in all images.
+1. Pre-process the image.
+2. Get the width to height ratio using the Measure Module from the 'scikit-image' library.
+3. Add to the feature matrix.
+Results :
+I got 43% accuracy by doing so.
+This was the first working model of the application with a proper feature and significant results.
+Although, this is a success, I am marking this experiment as to be redone. The measure module provides a lot of features which can be readily used for this project. The experiment has to continue to include some or all of the other properties and see the trade-off between performance vs speed.","Need to be redone",20151024-162418ced3abda5f57a07066a1be643ed95b17b9,https://localhost:443/elabftw/experiments.php?mode=view&id=6
+5,20151018,"Create test data","Goal : To a create test data (smaller).
+ The training data is large. It takes a lot of time to run the code. It is not advisable to go over the whole training data for smoke tests. It will be better to work with a smaller subset of the training data to perform initial tests before finally running the system.
+ It is improtant to include all the classes in the test data. This will ensure the application will perform properly when it is using the actual training data.
+All the classes should have at least 10 images and less than 100 images, instead of hundreds or thousands of images.
+Procedure : 
+One of the observations about all the test files was the name of the files. They all had numbers as their filenames and ranged from 100 - 999999. And every folder a mix of different length of filenames.
+1. Make a copy of the training data.
+2. Delete all files which have 5 or more characters in their filename.
+ 
+ 
+Results :
+1. Reduced number of images for testing from 30460 to 4652.
+2. Runtime for smoke-test was reduced to under ~2mins as compared ~5-7 mins.",Success,20151024-e97650b97169b9787d9a8ba0acc491bc8c1e4741,https://localhost:443/elabftw/experiments.php?mode=view&id=5
+8,20151018,"Rescale image and add the pixel as features : Efficiency - 38%","Goal : To rescale image to 25x25 and add all 625 pixels as features.
+ 
+Procedure :
+ The images vary a lot in their sizes. Some are really big ie.e 200x300. If we try to add all the pixels as our features, we will end up with more features than we have test data to work with. This strategy won't work.
+Hence, the approach is to rescale the image after pre-processing it. The rescale value is set to be 25x25. This generates 625 pixels per image. We have fair number of images to work with.
+Results :
+This strategy was executed successfully. The classification rate was at a very high of 38%. ",Success,20151024-8bba64bc38c98cee33b3d696055537d057703066,https://localhost:443/elabftw/experiments.php?mode=view&id=8
+3,20151018,"Add a new feature - Failure","Goal : To add a (random) feature to the application.
+ 
+Procedure : 
+1. Created a new vector of features.
+2. Added the feature eccentricity to it.
+3. Added to the Random Forest.
+4. Tested results
+Results :
+1. The application executed successfully.
+2. This experiment was a failure as the runtime of the application increased significantly.
+3. Came to the conclusion that this is not the right approach. Instead of creating a new vector, it is better to append to the existing feature vector.
+ ","Need to be redone",20151024-0547dc7b0f36654d02bca826de7c83644f846aac,https://localhost:443/elabftw/experiments.php?mode=view&id=3
+4,20151018,"Add a new feature - Success","Goal : To add a (random) new feature to the application
+ 
+Procedure :
+1. Used 'scikit-image' library to extract  a new feature from the image.
+2. Added the new feature to the existing feature matrix.
+3. Passed the feature list.
+Results :
+1. Successfully added a new project.
+2. The runtime of the application was reasonable with ~3mins.  ","Need to be redone",20151024-eb1075bca3da5561d7b0c51734de5cae34a799ec,https://localhost:443/elabftw/experiments.php?mode=view&id=4
+1,20151017,"Initial Set-up","Goal : To set up a working system to experiment with. - Python
+ 
+Procedure : Follow the steps in Kaggle Plankton Tutorial.
+ 
+Results :
+1. Successfully set-up the initial system.
+2. Got the understanding of the whole system, how it works and what changes needs to be done.
+3. Identified the key libraires to use.
+i. numpy
+ii. mahotas
+iii. OpenCV
+iv. scikit-image
+3. The efficiency of the system is measures by a efficient library called 'KFLogs'
+ 
+ ",Success,20151024-90d142715d729d0b77ab516017c90a2ad63604ca,https://localhost:443/elabftw/experiments.php?mode=view&id=1
+2,20151017,"Understand Image Feature Extraction","Goal : Understand the feature extraction process for images.
+ 
+Procedure : 
+1. Went through the links suggested by the staff.
+2. Studied the winning solutions for the Kaggle Challenge.
+3. Looked through a lot of images to understand how they differ. 
+4. Tried to get an understanding of how the different classes differ from each other visually and how can I capture that programatically. 
+ 
+Results :
+1. Got a good grasp on features of images.
+ ",Success,20151024-99aeef2f5761eb4eb7740b6949b9ef6a3413cd62,https://localhost:443/elabftw/experiments.php?mode=view&id=2
+14,20151015,"Initial Project Setup: Using java","Goal : Initial Project Setup: Using java
+ 
+Procedure :
+ Started the project using Java. Identified ImgeJ and Colt as to of the main libraries for this project.
+Results :
+ Realized that it is extremely slow.
+The image identification libraries are not very efficient.
+I cannot get all the features I am planning to get using this library.",Fail,20151024-36054ab496a986adf27a467bd47fb3e60aac646f,https://localhost:443/elabftw/experiments.php?mode=view&id=14

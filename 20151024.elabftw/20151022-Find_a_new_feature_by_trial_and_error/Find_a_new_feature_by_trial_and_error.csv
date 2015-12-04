@@ -1,0 +1,13 @@
+﻿id,date,title,content,status,elabid,url
+12,20151022,"Find a new feature by trial and error","Goal : To find a new feature which is suitable for the application by trial and error.
+ 
+Procedure :
+We have a lot of information being extracted from the libraries 'scikit-images and mahotas'
+At this point, I have observed that it is very difficult to get an increase in the efficiency. Getting 40% efficiency is very easy. It can be easily done by the rescaled pixels and the geomatric properties of the images.
+But moving forward, getting each level of efficiency is getting harder. I don't have expertise in image recognition. Hence, one of the strategies at this point is Brute force Trial and Error.
+This strategy can be applied as I have already reduced the test data set to 4000 instead of initial 30,000 images. 
+Results :
+ This trial and error method took 5 hours in all. But I was able to identify three more crucial features
+1. Zernike Moments
+2. Harallic Features
+3. Parameter Free Threshold Adjacency Statistics","Need to be redone",20151024-fb84b1ce3d5b04439972b8246fb03dee6cb84dfc,https://localhost:443/elabftw/experiments.php?mode=view&id=12

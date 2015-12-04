@@ -1,0 +1,9 @@
+﻿id,date,title,content,status,elabid,url
+14,20151015,"Initial Project Setup: Using java","Goal : Initial Project Setup: Using java
+ 
+Procedure :
+ Started the project using Java. Identified ImgeJ and Colt as to of the main libraries for this project.
+Results :
+ Realized that it is extremely slow.
+The image identification libraries are not very efficient.
+I cannot get all the features I am planning to get using this library.",Fail,20151024-36054ab496a986adf27a467bd47fb3e60aac646f,https://localhost:443/elabftw/experiments.php?mode=view&id=14

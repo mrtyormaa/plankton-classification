@@ -1,0 +1,9 @@
+﻿id,date,title,content,status,elabid,url
+10,20151020,"Increase the Number of training data : Artificial Increase of data by various strategies","Goal :To increase the number of images in trianing data.
+ 
+Procedure :
+ Planktons are sea creatures without a fixed orientation. What I mean to say is, we can identify the images of humans or dogs etc.. by their orientation. They can be straight or upside down or roatated at some angle. But planktons are not identified by that.
+So, a easy strategy to artificially boost the trainign data is to rotate the images by a random value. This will double our set of training data. This also might lead to significant increase in performance.
+Results :
+ This experiment was a failure. I could not see a significant increase in the performance. The performance increased from 48% to 48.2%. But the time taken to train the system increased significantly almost double the inital time.
+Hence, the changes will be rejected. This strategy is dropped.",Fail,20151024-0b1f46d56943d4315c622e421c7f96b19677b518,https://localhost:443/elabftw/experiments.php?mode=view&id=10

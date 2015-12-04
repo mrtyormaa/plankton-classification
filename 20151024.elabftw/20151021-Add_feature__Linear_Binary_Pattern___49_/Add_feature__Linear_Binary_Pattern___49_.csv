@@ -1,0 +1,17 @@
+﻿id,date,title,content,status,elabid,url
+11,20151021,"Add feature: Linear Binary Pattern : 49%","Goal :
+ 
+Procedure :
+ Local binary patterns (LBP) is a type of feature used for classification in computer vision. LBP is the particular case of the Texture Spectrum model. 
+The LBP feature vector, in its simplest form, is created in the following manner:
+
+Divide the examined window into cells (e.g. 16x16 pixels for each cell).
+For each pixel in a cell, compare the pixel to each of its 8 neighbors (on its left-top, left-middle, left-bottom, right-top, etc.). Follow the pixels along a circle, i.e. clockwise or counter-clockwise.
+Where the center pixel's value is greater than the neighbor's value, write ""1"". Otherwise, write ""0"". This gives an 8-digit binary number (which is usually converted to decimal for convenience).
+Compute the histogram, over the cell, of the frequency of each ""number"" occurring (i.e., each combination of which pixels are smaller and which are greater than the center).
+Optionally normalize the histogram.
+Concatenate (normalized) histograms of all cells. This gives the feature vector for the window
+
+Hence, this might be a very successful feature for further classification.
+Results :
+ This was a huge success. I got an improvement of 1% by addition of one metric. The final efficiency of the system at present lies at 49%.",Success,20151024-c5307ef94f9d3afff3dc8a7259beab4cd1de5211,https://localhost:443/elabftw/experiments.php?mode=view&id=11

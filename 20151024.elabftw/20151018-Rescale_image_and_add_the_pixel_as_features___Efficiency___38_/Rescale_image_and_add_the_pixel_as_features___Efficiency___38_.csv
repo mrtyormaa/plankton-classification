@@ -1,0 +1,8 @@
+﻿id,date,title,content,status,elabid,url
+8,20151018,"Rescale image and add the pixel as features : Efficiency - 38%","Goal : To rescale image to 25x25 and add all 625 pixels as features.
+ 
+Procedure :
+ The images vary a lot in their sizes. Some are really big ie.e 200x300. If we try to add all the pixels as our features, we will end up with more features than we have test data to work with. This strategy won't work.
+Hence, the approach is to rescale the image after pre-processing it. The rescale value is set to be 25x25. This generates 625 pixels per image. We have fair number of images to work with.
+Results :
+This strategy was executed successfully. The classification rate was at a very high of 38%. ",Success,20151024-8bba64bc38c98cee33b3d696055537d057703066,https://localhost:443/elabftw/experiments.php?mode=view&id=8

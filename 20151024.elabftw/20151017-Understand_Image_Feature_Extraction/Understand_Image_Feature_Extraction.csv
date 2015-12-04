@@ -1,0 +1,12 @@
+﻿id,date,title,content,status,elabid,url
+2,20151017,"Understand Image Feature Extraction","Goal : Understand the feature extraction process for images.
+ 
+Procedure : 
+1. Went through the links suggested by the staff.
+2. Studied the winning solutions for the Kaggle Challenge.
+3. Looked through a lot of images to understand how they differ. 
+4. Tried to get an understanding of how the different classes differ from each other visually and how can I capture that programatically. 
+ 
+Results :
+1. Got a good grasp on features of images.
+ ",Success,20151024-99aeef2f5761eb4eb7740b6949b9ef6a3413cd62,https://localhost:443/elabftw/experiments.php?mode=view&id=2

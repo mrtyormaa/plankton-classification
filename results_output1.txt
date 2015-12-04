@@ -1,0 +1,154 @@
+/Users/mrtyormaa/anaconda/bin/python /Users/mrtyormaa/PycharmProjects/Big-Data-MidTerm/Plankton.py
+Reading images
+5.0 % done
+10.0 % done
+15.0 % done
+20.0 % done
+25.0 % done
+30.0 % done
+35.0 % done
+40.0 % done
+45.0 % done
+50.0 % done
+55.0 % done
+60.0 % done
+65.0 % done
+70.0 % done
+75.0 % done
+80.0 % done
+85.0 % done
+90.0 % done
+95.0 % done
+100.0 % done
+Processing Data to remove NaNs
+Training
+Accuracy of all classes
+0.510254693531
+                                                              precision    recall  f1-score   support
+
+              train-all-data/echinoderm_larva_pluteus_urchin       0.43      0.02      0.03       176
+                        train-all-data/copepod_calanoid_eggs       0.66      0.25      0.36       346
+                      train-all-data/appendicularian_s_shape       0.35      0.56      0.43      1392
+                       train-all-data/pteropod_theco_dev_seq       0.00      0.00      0.00        26
+        train-all-data/echinoderm_larva_seastar_brachiolaria       0.56      0.89      0.69      1072
+                                       train-all-data/ephyra       1.00      0.11      0.19        28
+train-all-data/siphonophore_calycophoran_sphaeronectes_young       0.34      0.22      0.27       494
+                           train-all-data/trichodesmium_tuft       0.38      0.51      0.44      1356
+          train-all-data/copepod_calanoid_small_longantennae       0.77      0.33      0.46       174
+ train-all-data/siphonophore_calycophoran_sphaeronectes_stem       0.25      0.01      0.02       114
+              train-all-data/copepod_calanoid_frillyAntennae       1.00      0.02      0.03       126
+                            train-all-data/pteropod_triangle       0.27      0.05      0.09       130
+                        train-all-data/hydromedusae_solmaris       0.53      0.78      0.63      1406
+                    train-all-data/copepod_cyclopoid_copilia       0.60      0.05      0.09        60
+                            train-all-data/euphausiids_young       0.00      0.00      0.00        76
+                    train-all-data/hydromedusae_narcomedusae       0.49      0.08      0.13       264
+        train-all-data/hydromedusae_haliscera_small_sideview       0.00      0.00      0.00        18
+             train-all-data/ctenophore_cydippid_no_tentacles       0.00      0.00      0.00        84
+                           train-all-data/radiolarian_colony       0.43      0.28      0.34       316
+           train-all-data/siphonophore_calycophoran_abylidae       0.36      0.35      0.36       424
+                       train-all-data/trichodesmium_multiple       0.57      0.12      0.20       108
+                            train-all-data/ctenophore_lobate       0.72      0.58      0.64        76
+                           train-all-data/pteropod_butterfly       0.48      0.12      0.19       216
+                         train-all-data/siphonophore_partial       0.00      0.00      0.00        60
+               train-all-data/echinoderm_larva_pluteus_early       0.57      0.30      0.39       184
+                      train-all-data/tunicate_doliolid_nurse       0.27      0.19      0.22       834
+                      train-all-data/acantharia_protist_halo       0.70      0.43      0.53       142
+                  train-all-data/invertebrate_larvae_other_B       0.00      0.00      0.00        48
+                                    train-all-data/heteropod       0.00      0.00      0.00        20
+                                 train-all-data/protist_star       0.82      0.56      0.67       226
+                        train-all-data/fish_larvae_deep_body       0.00      0.00      0.00        20
+                                     train-all-data/decapods       0.00      0.00      0.00       110
+     train-all-data/echinoderm_seacucumber_auricularia_larva       0.31      0.03      0.05       192
+                       train-all-data/fish_larvae_myctophids       0.49      0.62      0.55       228
+                                  train-all-data/shrimp_zoea       0.39      0.22      0.28       348
+                                 train-all-data/fecal_pellet       0.38      0.31      0.34      1022
+                           train-all-data/trochophore_larvae       0.67      0.03      0.07        58
+                                train-all-data/protist_other       0.40      0.65      0.50      2344
+   train-all-data/siphonophore_calycophoran_rocketship_young       0.44      0.50      0.47       966
+                          train-all-data/chaetognath_sagitta       0.45      0.26      0.33      1388
+                   train-all-data/fish_larvae_very_thin_body       0.00      0.00      0.00        32
+                             train-all-data/crustacean_other       0.31      0.21      0.25       402
+          train-all-data/echinoderm_larva_seastar_bipinnaria       0.58      0.64      0.61       770
+                     train-all-data/siphonophore_other_parts       0.00      0.00      0.00        58
+                  train-all-data/invertebrate_larvae_other_A       0.00      0.00      0.00        28
+                           train-all-data/trichodesmium_puff       0.76      0.91      0.83      3958
+                     train-all-data/appendicularian_straight       0.29      0.03      0.06       484
+                           train-all-data/hydromedusae_typeF       0.40      0.33      0.36       122
+                      train-all-data/chaetognath_non_sagitta       0.59      0.72      0.65      1630
+                      train-all-data/hydromedusae_narco_dark       1.00      0.02      0.04        46
+                               train-all-data/chordate_type1       0.51      0.67      0.58       154
+    train-all-data/copepod_calanoid_large_side_antennatucked       0.47      0.26      0.33       212
+                    train-all-data/hydromedusae_sideview_big       0.00      0.00      0.00       152
+                               train-all-data/detritus_other       0.28      0.36      0.31      1828
+                                train-all-data/echinopluteus       1.00      0.02      0.04        54
+                      train-all-data/fish_larvae_medium_body       0.38      0.50      0.43       170
+                train-all-data/appendicularian_fritillaridae       0.00      0.00      0.00        32
+                   train-all-data/tornaria_acorn_worm_larvae       0.81      0.45      0.58        76
+               train-all-data/copepod_cyclopoid_oithona_eggs       0.56      0.78      0.65      2378
+   train-all-data/siphonophore_calycophoran_rocketship_adult       0.38      0.21      0.27       270
+                           train-all-data/shrimp_sergestidae       0.49      0.26      0.34       306
+                                train-all-data/tunicate_salp       0.57      0.74      0.64       472
+                            train-all-data/tunicate_doliolid       0.36      0.21      0.27       878
+               train-all-data/echinoderm_larva_pluteus_typeC       0.66      0.23      0.34       160
+                       train-all-data/siphonophore_physonect       0.45      0.20      0.28       256
+                               train-all-data/unknown_sticks       0.36      0.06      0.10       350
+        train-all-data/hydromedusae_typeD_bell_and_tentacles       0.80      0.56      0.66       112
+                              train-all-data/shrimp_caridean       0.71      0.10      0.18        98
+                    train-all-data/copepod_cyclopoid_oithona       0.54      0.63      0.58      1798
+                            train-all-data/diatom_chain_tube       0.48      0.49      0.48      1000
+                                train-all-data/detritus_blob       0.26      0.10      0.14       726
+           train-all-data/hydromedusae_shapeA_sideview_small       0.43      0.15      0.22       548
+                train-all-data/acantharia_protist_big_center       0.00      0.00      0.00        26
+              train-all-data/hydromedusae_bell_and_tentacles       0.67      0.12      0.20       150
+                         train-all-data/unknown_unclassified       0.10      0.02      0.03       850
+                          train-all-data/hydromedusae_shapeB       0.32      0.09      0.14       300
+                         train-all-data/trichodesmium_bowtie       0.46      0.63      0.53      1416
+                            train-all-data/shrimp-like_other       0.00      0.00      0.00       104
+                   train-all-data/copepod_calanoid_flatheads       0.22      0.01      0.01       356
+                    train-all-data/unknown_blobs_and_smudges       0.34      0.15      0.21       634
+                train-all-data/ctenophore_cydippid_tentacles       0.00      0.00      0.00       106
+      train-all-data/siphonophore_calycophoran_sphaeronectes       0.45      0.27      0.34       358
+                                    train-all-data/artifacts       0.64      0.91      0.75       786
+                     train-all-data/hydromedusae_solmundella       0.48      0.62      0.54       246
+                           train-all-data/hydromedusae_other       0.00      0.00      0.00        24
+                           train-all-data/hydromedusae_typeD       0.75      0.03      0.07        86
+                             train-all-data/copepod_calanoid       0.44      0.50      0.47      1362
+                   train-all-data/copepod_calanoid_eucalanus       0.78      0.21      0.33       192
+                         train-all-data/hydromedusae_aglaura       0.58      0.37      0.45       254
+                          train-all-data/protist_dark_center       0.00      0.00      0.00       216
+                                  train-all-data/euphausiids       0.68      0.19      0.29       272
+                           train-all-data/acantharia_protist       0.63      0.83      0.71      1778
+                                    train-all-data/amphipods       0.33      0.02      0.04        98
+                                   train-all-data/polychaete       0.40      0.07      0.12       262
+                            train-all-data/radiolarian_chain       0.43      0.32      0.37       574
+                 train-all-data/siphonophore_physonect_young       0.00      0.00      0.00        42
+                         train-all-data/hydromedusae_liriope       0.00      0.00      0.00        38
+                                   train-all-data/stomatopod       0.00      0.00      0.00        48
+                            train-all-data/jellies_tentacles       0.51      0.16      0.24       282
+         train-all-data/echinoderm_larva_pluteus_brittlestar       0.67      0.19      0.30        72
+                                train-all-data/copepod_other       0.00      0.00      0.00        48
+                        train-all-data/fish_larvae_thin_body       0.32      0.05      0.08       128
+                       train-all-data/hydromedusae_haliscera       0.53      0.59      0.56       458
+                          train-all-data/diatom_chain_string       0.80      0.90      0.85      1038
+                     train-all-data/fish_larvae_leptocephali       1.00      0.08      0.15        62
+                       train-all-data/copepod_calanoid_large       0.54      0.54      0.54       572
+                    train-all-data/hydromedusae_partial_dark       0.61      0.61      0.61       380
+                     train-all-data/hydromedusae_narco_young       0.37      0.26      0.30       672
+                            train-all-data/chaetognath_other       0.46      0.75      0.57      3868
+                    train-all-data/copepod_calanoid_octomoms       0.00      0.00      0.00        98
+                          train-all-data/protist_fuzzy_olive       0.70      0.74      0.72       744
+                 train-all-data/appendicularian_slight_curve       0.36      0.40      0.38      1064
+                         train-all-data/detritus_filamentous       0.35      0.04      0.07       788
+                           train-all-data/hydromedusae_typeE       0.00      0.00      0.00        28
+                               train-all-data/artifacts_edge       0.91      0.90      0.91       340
+                          train-all-data/hydromedusae_shapeA       0.51      0.77      0.61       824
+                            train-all-data/ctenophore_cestid       0.67      0.29      0.40       226
+                         train-all-data/tunicate_salp_chains       0.50      0.10      0.16       146
+                             train-all-data/hydromedusae_h15       0.50      0.07      0.12        70
+                            train-all-data/protist_noctiluca       0.57      0.47      0.51      1250
+                             train-all-data/tunicate_partial       0.75      0.91      0.82       704
+
+                                                 avg / total       0.48      0.51      0.47     60672
+
+Accuracy of all classes
+0.510254693531
